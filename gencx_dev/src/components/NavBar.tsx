@@ -1,7 +1,15 @@
-import { HStack, Text } from "@chakra-ui/react";
+import { HStack, Text, Button } from "@chakra-ui/react";
 
 const NavBar = () => {
-  return <Text>Nabbar...</Text>
+ 
+  return( 
+  <HStack justifyContent={'space-between'} padding={'10px'}>
+  <Text fontSize='3xl'>GenCX Dev</Text>
+  <Button colorScheme='gray' variant='ghost'>
+    Configuration
+  </Button>
+  </HStack>
+  );
 }
 
 export default NavBar;
